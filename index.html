@@ -1,1 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>RANGAREDDY DISTRICT - SHAMSHABAD MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#0b5394;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.place:hover{
+transform:translateY(-3px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+width:60px;
+height:60px;
+}
+
+.place{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.open-btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>RANGAREDDY DISTRICT</h1>
+<h2>SHAMSHABAD MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+
+<!-- 1 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">✈️</div>
+
+<div class="info">
+<h3>Rajiv Gandhi International Airport</h3>
+<p>Airport</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.24027,78.42935"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 2 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">☀️</div>
+
+<div class="info">
+<h3>GMR Solar Power Plant</h3>
+<p>Power Plant</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.24608,78.40094"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 3 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🥐</div>
+
+<div class="info">
+<h3>Karachi Bakery</h3>
+<p>Bakery</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.26047,78.38642"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 4 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🌳</div>
+
+<div class="info">
+<h3>Park Niveda</h3>
+<p>Park</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.26034,78.38622"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 5 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+
+<div class="info">
+<h3>Sri Dharm Sai Mandir</h3>
+<p>Temple</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.25744,78.41825"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 6 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🌉</div>
+
+<div class="info">
+<h3>Kamuni Lake Railway Bridge</h3>
+<p>Bridge</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.25419,78.38728"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 7 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🌱</div>
+
+<div class="info">
+<h3>GMR Nursery</h3>
+<p>Nursery</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.25311,78.42666"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 8 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">💍</div>
+
+<div class="info">
+<h3>Krishna Pearls and Jewellers</h3>
+<p>Jewellery Shop</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.23505,78.43018"
+target="_blank">
+Open Map
+</a>
+
+</div>
+  <!-- 9 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">📸</div>
+
+<div class="info">
+<h3>Studio Romeo Juliet</h3>
+<p>Studio</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.25148,78.44993"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 10 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+
+<div class="info">
+<h3>Sri Ayyappa Swamy Devalayam</h3>
+<p>Temple</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.25426,78.45276"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 11 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏫</div>
+
+<div class="info">
+<h3>Delhi Public School</h3>
+<p>School</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.25589,78.43797"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 12 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🎓</div>
+
+<div class="info">
+<h3>GMR Aero Academy</h3>
+<p>Academy</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.23905,78.43585"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 13 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏦</div>
+
+<div class="info">
+<h3>ICICI Bank</h3>
+<p>Bank</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.23898,78.43561"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 14 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏛️</div>
+
+<div class="info">
+<h3>Bureau of Civil Aviation Security</h3>
+<p>Government Office</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.23833,78.43375"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 15 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">📦</div>
+
+<div class="info">
+<h3>Air Cargo Complex</h3>
+<p>Cargo Complex</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.23689,78.41956"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 16 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚒</div>
+
+<div class="info">
+<h3>ARRF Satellite Fire Station</h3>
+<p>Fire Station</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.23317,78.42161"
+target="_blank">
+Open Map
+</a>
+
+</div>
+  <!-- 17 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🌾</div>
+
+<div class="info">
+<h3>Farm Land</h3>
+<p>Farm</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.22052,78.41829"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 18 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏛️</div>
+
+<div class="info">
+<h3>Shri Leela Gardens</h3>
+<p>Function Hall</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.22536,78.44596"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 19 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">📦</div>
+
+<div class="info">
+<h3>HYD3 Amazon Warehouse</h3>
+<p>Warehouse</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.23871,78.44362"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 20 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍬</div>
+
+<div class="info">
+<h3>G Pulla Reddy Sweets</h3>
+<p>Sweet Shop</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.25711,78.38294"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 21 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🎬</div>
+
+<div class="info">
+<h3>Ganesh 70MM</h3>
+<p>Cinema Theatre</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.26485,78.38979"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 22 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍽️</div>
+
+<div class="info">
+<h3>Airport Bawarchi</h3>
+<p>Restaurant</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.26326,78.38878"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 23 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏛️</div>
+
+<div class="info">
+<h3>Shamshabad MRO Office</h3>
+<p>Government Office</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.26226,78.39032"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 24 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚉</div>
+
+<div class="info">
+<h3>Umdanagar Railway Station</h3>
+<p>Railway Station</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.26347,78.39302"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Rangareddy District - Shamshabad Mandal</p>
+<p>Developed using OU & OTBI Project Template</p>
+</footer>
+
+<script>
+
+function searchPlaces() {
+
+let input = document.getElementById("search").value.toLowerCase();
+
+let places = document.getElementsByClassName("place");
+
+for (let i = 0; i < places.length; i++) {
+
+let text = places[i].innerText.toLowerCase();
+
+if (text.indexOf(input) > -1) {
+places[i].style.display = "flex";
+} else {
+places[i].style.display = "none";
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
